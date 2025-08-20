@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script defer src="home.js"></script> 
     <title>Agronegócio</title>
 </head>
 <body>
     <header>
-        <button>
-            <img src="./img_edutec/menuHamburguer.png" alt="ícone do menu hamburguer">
-        </button>
+       
+      
+    </header>
+
+    <body>
     
-        <nav class="menuHamburguer">
-    <button>
-        <img src="./assets/images/icon-menu-close.svg" alt="ícone de x para fechar o menu">
-    </button>
-    <img src="./img_edutec/logo_hamburguer.png" alt="">
+      
+     
+      <div class="menuSite">
+        <button id="btnHamburguer" aria-label="Abrir menu">
+            <img src="./img_edutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+          </button>
+        
+         
+          <nav class="menuHamburguer" aria-label="Menu de navegação">
+            <button id="btnFecharMenu" aria-label="Fechar menu">&times;</button>
+        
+            <img class="logoMenu" src="./img_edutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+        
             <a href="./index.html">HOME</a>
+            <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
             <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
             <a href="./contribuicaoAoPib.html">LOGÍSTICA E EXPORTAÇÃO</a>
             <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
@@ -26,26 +38,54 @@
             <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
             <a href="./jogo1.html">PRATICANDO</a>
             <a href="./sobreNos.html">SOBRE NÓS</a>
-        <div class="precisaDeAjuda">
-            <button>
-                <a href="./sobreNos.html">SOBRE NÓS</a>
-            </button>
-        </div>
         
-        </nav>
-      
-    </header>
+          
+            <div class="precisaDeAjuda">
+              <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+            </div>
+          </nav>
+        
+          
+          <dialog id="modalForm">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar formulário">&times;</button>
+              <form id="formContato">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" id="email" name="email" required />
+        
+                <label for="mensagem">Digite sua dúvida:</label>
+                <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+        
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </dialog>
+        
+         
+          <dialog id="modalConfirmacao">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+              <h1>Obrigado por nos contatar!</h1>
+              <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+            </div>
+          </dialog>
+       </div>
 
-    <main>
-        <section class="hero">
-            <h2>Bem-vindo ao nosso site de agronegócio!</h2>
-            <p>Aqui, você encontrará informações, novidades e soluções sobre a cadeia produtiva que vai do plantio à comercialização de produtos agrícolas e pecuários.</p>
-            <p>Nós temos o objetivo de promover o desenvolvimento do agronegócio, valorizando as práticas que alinham inovação, produtividade e respeito ao meio ambiente. Navegue e descubra como o agronegócio transforma o futuro!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Agronegócio. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+      <div class="container">
+          <h1>Bem-vindo ao nosso site de agronegócio!</h1>
+          <p>
+              Aqui, você encontrará informações, novidades e soluções sobre a cadeia produtiva que vai do
+              plantio à comercialização de produtos agrícolas e pecuários.
+          </p>
+          <p>
+              Nosso objetivo é promover o desenvolvimento do agronegócio, valorizando as práticas que
+              aliam inovação, produtividade e respeito ao meio ambiente. Navegue e descubra como o
+              agronegócio transforma o futuro!
+          </p>
+          
+          <div class="hero">
+            <img src="img_edutec/img1_home.png" alt="Trator no campo pulverizando plantações" class="imagem-principal">
+        </div>
+      </div>
+  </body>
+  </html>

@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agrotech Projeto</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuição ao PIB</title>
+    <link rel="stylesheet" href="contribuicaoAoPib.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="logo.png" alt="Agrotech Logo" />
-      </div>
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h2>CONHEÇA O PROJETO DO</h2>
-      <h1>AGROTECH</h1>
-      <p>
-        <a href="#">
-          O IBGE classifica a agropecuária, que inclui cultivo, criação de animais, pesca e aquicultura, e publica dados do PIB relacionados à produção agrícola e pecuária.
-        </a>
-      </p>
-    </div>
-  </section>
-
-  <section class="agropecuario">
-    <div class="container agropecuario-content">
-      <div class="agro-image">
-        <img src="seedling.jpg" alt="Seedling growing in soil" />
-      </div>
-      <div class="agro-text">
-        <h3>SETOR AGROPECUÁRIO</h3>
-        <p>
-          Agrotech, no setor agropecuário, refere-se ao uso de inovações tecnológicas para aumentar a produtividade, reduzir custos, melhorar a sustentabilidade e otimizar a gestão tanto das lavouras quanto da criação de animais.
-        </p>
-        <hr />
-      </div>
-    </div>
-  </section>
-
-  <section class="agro-conecta">
-    <div class="container agro-conecta-content">
-      <h3>O Agro Conecta, Alimenta e Transforma</h3>
-      <div class="cards-wrapper">
-        <div class="card">
-          <img src="field.jpg" alt="Field of crops" />
-          <p>
-            Ele promove inovação e sustentabilidade. Cada semente plantada é um passo para um futuro melhor, onde o campo e a cidade se conectam para garantir alimento e progresso. Valorizar o agro é fortalecer nossa nação e cuidar do nosso amanhã.
-          </p>
-        </div>
-        <div class="card">
-          <img src="tractor.jpg" alt="Tractor in sunset" />
-          <p>
-            O Agro é a base que alimenta o mundo e move economias. Além de gerar empregos e riqueza, impulsiona o desenvolvimento sustentável, promove inovação tecnológica e fortalece a conexão entre o campo e a cidade.
-          </p>
-        </div>
-      </div>
-      <div class="carousel-controls">
-        <button class="carousel-prev" aria-label="Anterior">&#10094;</button>
-        <button class="carousel-next" aria-label="Próximo">&#10095;</button>
-      </div>
-    </div>
-  </section>
+    <header>
+        <h1>CONTRIBUIÇÃO AO PIB</h1>
+    </header>
+    <div class="menuSite">
+        <button id="btnHamburguer" aria-label="Abrir menu">
+            <img src="./img_edutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+          </button>
+        
+         
+          <nav class="menuHamburguer" aria-label="Menu de navegação">
+            <button id="btnFecharMenu" aria-label="Fechar menu">&times;</button>
+        
+            <img class="logoMenu" src="./img_edutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+        
+            <a href="./index.html">HOME</a>
+            <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+            <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+            <a href="./contribuicaoAoPib.html">LOGÍSTICA E EXPORTAÇÃO</a>
+            <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+            <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+            <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+            <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+            <a href="./jogo1.html">PRATICANDO</a>
+            <a href="./sobreNos.html">SOBRE NÓS</a>
+        
+          
+            <div class="precisaDeAjuda">
+              <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+            </div>
+          </nav>
+        
+          
+          <dialog id="modalForm">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar formulário">&times;</button>
+              <form id="formContato">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" id="email" name="email" required />
+        
+                <label for="mensagem">Digite sua dúvida:</label>
+                <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+        
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </dialog>
+        
+         
+          <dialog id="modalConfirmacao">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+              <h1>Obrigado por nos contatar!</h1>
+              <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+            </div>
+          </dialog>
+       </div>
+    <main>
+        <section>
+            <p>O PIB (Produto Interno Bruto) é um indicador fundamental da saúde econômica de um país. Ele representa o valor total de todos os bens e serviços produzidos em um determinado período. A contribuição ao PIB é essencial para entender o crescimento econômico e o desenvolvimento sustentável.</p>
+            <p>O agronegócio, por exemplo, desempenha um papel crucial na contribuição ao PIB brasileiro, com exportações que somam bilhões de dólares e geram empregos em diversas áreas. Investimentos em infraestrutura e tecnologia são fundamentais para aumentar essa contribuição e garantir a competitividade no mercado global.</p>
+        </section>
+        <figure>
+            <img src="img_edutec/img2_contribuicaoaopib.png" alt="Contribuição ao PIB" />
+            <img src="img_edutec/img3_contribuicaoaopib.png" alt="Contribuição ao PIB">
+            <img src="img_edutec/img4_contribuicaoaopib.png" alt="Contribuição ao PIB">
+        </figure>
+    </main>
+    <script>
+        console.log("Contribuição ao PIB page loaded.");
+    </script>
 </body>
 </html>

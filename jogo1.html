@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz da Fazenda</title>
+  
+</head>
+<body>
+  
+  <section class="mapa-container">
+    <img src="./img_edutec/imgfundo_jogo.png" alt="Mapa da fazenda" class="mapa" />
+    <img src="./img_edutec/boneco_jogo.png" alt="Avatar" class="avatar" />
+    <img src="./img_edutec/chapeu_jogo.png" alt="chapeu" class="chapeu">
+    <img src="./img_edutec/pa_jogo.png" alt="pa" class="pa">
+    <img src="./img_edutec/milho_jogo.png" alt="milho" class="milho">
+    <img src="./img_edutec/carrinho_jogo.png" alt="carrinho" class="carrinho">
+    <img src="./img_edutec/cafe_jogo.png" alt="cafe" class="cafe">
+    <img src="./img_edutec/cenoura_jogo.png" alt="cenoura" class="cenoura">
+    <img src="./img_edutec/trigo_jogo.png" alt="trigo" class="trigo">
+    <img src="./img_edutec/batata_jogo.png" alt="batata" class="batata">
+    <img src="./img_edutec/01_jogo.png" alt="01" class="01">
+    <img src="./img_edutec/02_jogo.png" alt="02" class="02">
+    <img src="./img_edutec/Component 5.png.crdownload" alt="03" class="03">
+    <img src="./img_edutec/04_jogo.png" alt="04" class="04">
+    <img src="./img_edutec/05_jogo.png" alt="05" class="05">
+    <img src="./img_edutec/Component 12.png" alt="06" class="06">
+    <img src="./img_edutec/07_jogo.png" alt="07" class="07">
+    <img src="./img_edutec/08_jogo.png" alt="08" class="08">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 1">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 2">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 3">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 4">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 5">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 6">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 7">
+    <img src="./img_edutec/Component 126.png.crdownload" class="checkpoint-icon" alt="Checkpoint 8">
+  </section>
+  <div class="menuSite">
+    <button id="btnHamburguer" aria-label="Abrir menu">
+        <img src="./img_edutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+      </button>
+    
+     
+      <nav class="menuHamburguer" aria-label="Menu de navegação">
+        <button id="btnFecharMenu" aria-label="Fechar menu">&times;</button>
+    
+        <img class="logoMenu" src="./img_edutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+    
+        <a href="./index.html">HOME</a>
+        <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+        <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+        <a href="./contribuicaoAoPib.html">LOGÍSTICA E EXPORTAÇÃO</a>
+        <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+        <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+        <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+        <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+        <a href="./jogo1.html">PRATICANDO</a>
+        <a href="./sobreNos.html">SOBRE NÓS</a>
+    
+      
+        <div class="precisaDeAjuda">
+          <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+        </div>
+      </nav>
+    
+      
+      <dialog id="modalForm">
+        <div class="modal-content">
+          <button class="fechar" aria-label="Fechar formulário">&times;</button>
+          <form id="formContato">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email" required />
+    
+            <label for="mensagem">Digite sua dúvida:</label>
+            <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </dialog>
+    
+     
+      <dialog id="modalConfirmacao">
+        <div class="modal-content">
+          <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+          <h1>Obrigado por nos contatar!</h1>
+          <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+        </div>
+      </dialog>
+   </div>
+  
+  <section class="inicio">
+    <h2>📜 Instrução do jogo</h2>
+    <p>Bem-vindo ao Quiz da Fazenda! Mostre que você entende tudo sobre agronegócio.</p>
+    <ol>
+      <li>Você terá três perguntas por rodada.</li>
+      <li>Escolha a alternativa correta entre as opções.</li>
+      <li>A cada acerto, você ganha um objeto e avança no jogo.</li>
+      <li>Se o nível for total, uma premiação aparece!</li>
+    </ol>
+    <form>
+      <button class="btn">Iniciar</button>
+    </form>
+  </section>
+
+ <!-- FASE 1 -->
+<section class="q1">
+  <h3>Questão 1</h3>
+  <p>Qual tecnologia permite coleta e análise de dados na agricultura 4.0?</p>
+  <button>a) Robôs</button>
+  <button>b) Sensores</button>
+  <button>c) Tratores manuais</button>
+  <button>d) Fertilizantes químicos</button>
+</section>
+
+<section class="q2">
+  <h3>Questão 2</h3>
+  <p>Qual equipamento ajuda na irrigação e colheita com mais precisão?</p>
+  <button>a) Trator comum</button>
+  <button>b) GPS agrícola</button>
+  <button>c) Drones</button>
+  <button>d) Pulverizador manual</button>
+</section>
+
+<section class="q3">
+  <h3>Questão 3</h3>
+  <p>Qual mercado deve adotar em 5 anos com a introdução de robôs no campo?</p>
+  <button>a) Comércio internacional</button>
+  <button>b) Produção de adubos</button>
+  <button>c) Robótica agrícola</button>
+  <button>d) Sensoriamento remoto</button>
+</section>
+
+<!-- FASE 2 -->
+
+<section class="q4">
+  <h3>Questão 4</h3>
+  <p>O que caracteriza a agricultura 4.0?</p>
+  <button>a) Foco exclusivo na mecanização</button>
+  <button>b) Uso de tecnologias digitais e dados</button>
+  <button>c) Plantio manual em grande escala</button>
+  <button>d) Ausência de fertilizantes químicos</button>
+</section>
+
+<section class="q5">
+  <h3>Questão 5</h3>
+  <p>Qual estilo de trabalho os robôs agrícolas vêm substituindo?</p>
+  <button>a) Reuniões técnicas</button>
+  <button>b) Negociações comerciais</button>
+  <button>c) Tarefas manuais tradicionais</button>
+  <button>d) Consultorias ambientais</button>
+</section>
+
+<section class="q6">
+  <h3>Questão 6</h3>
+  <p>Qual dessas não é uma função dos sensores na agricultura?</p>
+  <button>a) Aplicação de fertilizantes</button>
+  <button>b) Auxílio na colheita</button>
+  <button>c) Venda direta ao consumidor</button>
+  <button>d) Monitoramento de pragas</button>
+</section>
+
+<!-- FASE 3 -->
+
+<section class="q7">
+  <h3>Questão 7</h3>
+  <p>Qual é um dos objetivos da agricultura sustentável?</p>
+  <button>a) Reduzir impactos ambientais</button>
+  <button>b) Aumentar os preços dos produtos</button>
+  <button>c) Eliminar o uso de tecnologias</button>
+  <button>d) Reduzir a produção</button>
+</section>
+
+<section class="q8">
+  <h3>Questão 8</h3>
+  <p>Qual prática ajuda a reduzir emissão de gases do efeito estufa?</p>
+  <button>a) Queima de resíduos</button>
+  <button>b) Uso de fertilizantes químicos</button>
+  <button>c) Digestão anaeróbica com dejetos animais</button>
+  <button>d) Plantio de monoculturas</button>
+</section>
+
+<section class="q9">
+  <h3>Questão 9</h3>
+  <p>O que o uso de sistemas de captação de chuva permite?</p>
+  <button>a) Irrigação sustentável</button>
+  <button>b) Aumento de fertilizantes</button>
+  <button>c) Redução da produção</button>
+  <button>d) Aumento de pragas</button>
+</section>
+
+<!-- FASE 4 -->
+
+<section class="q10">
+  <h3>Questão 10</h3>
+  <p>Qual suplemento pode reduzir a produção de metano por</p>
+  <button>a) Sal mineral</button>
+  <button>b) Suplementos alimentares específicos</button>
+  <button>c) Água potável</button>
+  <button>d) Ração tradicional</button>
+</section>
+
+<section class="q11">
+  <h3>Questão 11</h3>
+  <p>O que é um desafio na implementação da sustentabilidade?</p>
+  <button>a) Falta de solo fértil</button>
+  <button>b) Ausência de interesse dos produtores</button>
+  <button>c) Exigências do mercado</button>
+  <button>d) Proibição de exportações</button>
+</section>
+
+<section class="q12">
+  <h3>Questão 12</h3>
+  <p>Como o agro ajuda a proteger o meio ambiente?</p>
+  <button>a) Por meio da agropecuária extensiva</button>
+  <button>b) Ao reduzir o uso de adubos químicos</button>
+  <button>c) Usando mais herbicidas</button>
+  <button>d) Mantendo técnicas antigas</button>
+</section>
+
+<!-- FASE 5 -->
+
+<section class="q13">
+  <h3>Questão 13</h3>
+  <p>Qual é um problema do transporte rodoviário no Brasil?</p>
+  <button>a) Baixa produção rural</button>
+  <button>b) Pouca exportação</button>
+  <button>c) Estradas mal conservadas</button>
+  <button>d) Falta de veículos</button>
+</section>
+
+<section class="q14">
+  <h3>Questão 14</h3>
+  <p>O que o monitoramento em tempo real ajuda a melhorar?</p>
+  <button>a) Preço de produtos</button>
+  <button>b) Eficiência da logística</button>
+  <button>c) Estoque de sementes</button>
+  <button>d) Crescimento de plantas</button>
+</section>
+
+<section class="q15">
+  <h3>Questão 15</h3>
+  <p>Qual é o papel das ferrovias e portos no agronegócio?</p>
+  <button>a) Armazenar fertilizantes</button>
+  <button>b) Reduzir impostos</button>
+  <button>c) Otimizar o escoamento da produção</button>
+  <button>d) Reflorestar áreas urbanas</button>
+</section>
+
+<!-- FASE 6 -->
+
+<section class="q16">
+  <h3>Questão 16</h3>
+  <p>Quanto o Brasil exportou no agronegócio entre jan-mar de 2024?</p>
+  <button>a) US$ 15,22 bilhões</button>
+  <button>b) US$ 28,13 bilhões</button>
+  <button>c) US$ 37,44 bilhões</button>
+  <button>d) US$ 50 bilhões</button>
+</section>
+
+<section class="q17">
+  <h3>Questão 17</h3>
+  <p>Qual feira acontece em Ribeirão Preto e é uma das maiores do mundo?</p>
+  <button>a) Agrishow</button>
+  <button>b) ExpoAgro</button>
+  <button>c) Fenatran</button>
+  <button>d) Expointer</button>
+</section>
+
+<section class="q18">
+  <h3>Questão 18</h3>
+  <p>A Expointer destaca principalmente:</p>
+  <button>a) Robótica internacional</button>
+  <button>b) Produção rural do sul do Brasil</button>
+  <button>c) Comércio de fertilizantes</button>
+  <button>d) Agricultura urbana</button>
+</section>
+
+<!-- FASE 7 -->
+
+<section class="q19">
+  <h3>Questão 19</h3>
+  <p>A Fenatran tem foco em:</p>
+  <button>a) Pecuária familiar</button>
+  <button>b) Transporte rodoviário de cargas</button>
+  <button>c) Irrigação rural</button>
+  <button>d) Vendas de sementes</button>
+</section>
+
+<section class="q20">
+  <h3>Questão 20</h3>
+  <p>Qual empresa é a maior exportadora de carne do Brasil?</p>
+  <button>a) Ambev</button>
+  <button>b) JBS</button>
+  <button>c) Natura</button>
+  <button>d) Raízen</button>
+</section>
+
+<section class="q21">
+  <h3>Questão 21</h3>
+  <p>Quem é conhecido por atuar na agricultura sustentável e é cofundador da Natura?</p>
+  <button>a) Gilberto Tomazoni</button>
+  <button>b) Guilherme Leal</button>
+  <button>c) Ricardo Dell Aquila</button>
+  <button>d) André Maggi</button>
+</section>
+
+<!-- FASE 8 -->
+
+<section class="q22">
+  <h3>Questão 22</h3>
+  <p>O Grupo André Maggi se destaca principalmente na produção de</p>
+  <button>a) Soja</button>
+  <button>b) Cana-de-açúcar</button>
+  <button>c) Leite</button>
+  <button>d) Arroz</button>
+</section>
+
+<section class="q23">
+  <h3>Questão 23</h3>
+  <p>A Ambev investe na produção de:</p>
+  <button>a) Leite e carne</button>
+  <button>b) Cacau e milho</button>
+  <button>c) Cevada e bebidas</button>
+  <button>d) Maçã e trigo</button>
+</section>
+
+<section class="q24">
+  <h3>Questão 24</h3>
+  <p>A Raízen é conhecida por:</p>
+  <button>a) Exportar carne</button>
+  <button>b) Plantar soja em grande escala</button>
+  <button>c) Produzir etanol e exportar açúcar</button>
+  <button>d) Criar gado no sul do Brasil</button>
+</section>
+
+  <section class="fim">
+    <h3>🎉 Parabéns! Você é um(a) verdadeiro(a) expert!</h3>
+    <p>Resultado: 10/10 acertos.</p>
+    <p>Continue assim:<br>O conhecimento é a sua melhor ferramenta! 🚜🌾</p>
+  </section>
+</body>
+</html>

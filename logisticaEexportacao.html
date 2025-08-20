@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística e Exportação</title>
+    <link rel="stylesheet" href="logisticaEexportacao.css">
+</head>
+<body>
+    <header>
+        <h1>LOGÍSTICA E EXPORTAÇÃO</h1>
+    </header>
+    <div class="menuSite">
+        <button id="btnHamburguer" aria-label="Abrir menu">
+            <img src="./img_edutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+          </button>
+        
+         
+          <nav class="menuHamburguer" aria-label="Menu de navegação">
+            <button id="btnFecharMenu" aria-label="Fechar menu">&times;</button>
+        
+            <img class="logoMenu" src="./img_edutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+        
+            <a href="./index.html">HOME</a>
+            <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+            <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+            <a href="./contribuicaoAoPib.html">LOGÍSTICA E EXPORTAÇÃO</a>
+            <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+            <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+            <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+            <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+            <a href="./jogo1.html">PRATICANDO</a>
+            <a href="./sobreNos.html">SOBRE NÓS</a>
+        
+          
+            <div class="precisaDeAjuda">
+              <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+            </div>
+          </nav>
+        
+          
+          <dialog id="modalForm">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar formulário">&times;</button>
+              <form id="formContato">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" id="email" name="email" required />
+        
+                <label for="mensagem">Digite sua dúvida:</label>
+                <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+        
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </dialog>
+        
+         
+          <dialog id="modalConfirmacao">
+            <div class="modal-content">
+              <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+              <h1>Obrigado por nos contatar!</h1>
+              <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+            </div>
+          </dialog>
+       </div>
+    <main>
+        <section>
+            <p>A logística no agronegócio brasileiro é crucial para o escoamento eficiente da produção, englobando planejamento, transporte e armazenamento. Apesar dos desafios como infraestrutura deficiente e altos custos, a adoção de tecnologias avançadas, como monitoramento em tempo real, tem melhorado a eficiência e reduzido perdas.</p>
+            <p>O investimento em infraestrutura, como ferrovias e portos, é vital para otimizar o fluxo de produção. As exportações do agronegócio brasileiro, que somaram US$ 37,44 bilhões entre janeiro e março de 2024, destacam-se pela qualidade e capacidade de atender à demanda global. No entanto, o setor enfrenta barreiras comerciais e a necessidade de modernização. O Brasil é líder em segmentos como açúcar e café, mas precisa superar desafios logísticos, especialmente no modal rodoviário, que enfrenta problemas como estradas mal conservadas e baixa visibilidade.</p>
+        </section>
+        <section>
+            <img src="img_edutec/img1_logisticaeexportacao.png" alt="Logística" />
+            <img src="img_edutec/img2_logisticaeexportacao.png" alt="Logística">
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

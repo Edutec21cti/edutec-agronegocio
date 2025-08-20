@@ -1,64 +1,472 @@
-* {
-    box-sizing: border-box;
+.div-menuSite {
+
+  *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde-base: #283D28;
+    --letra-menu: #FFFFFF;
+    --precisa-bloco: #507A4F;
+    --precisa-letra: #DCC6AA;
+    --bloco-ajuda: #E4FFC9;
+    --bloco-enviar: #D5EC9F;
+    --letra-enviar: #003713;
+    --letra-marrom: #633216;
+    --linha: #000000;
+    --verde-escuro: #1f3a23;
+
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
+    margin: 0;
+    font-family: , sans-serif;
+  }
+  
+  .btnHamburguer {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .btnHamburguer img {
+    width: 30px;
+    height: 30px;
+  }
 
-header {
-    background-color: #333;
+  
+  nav.menuHamburguer {
+    position: fixed;
+    top: 0;
+    right: -280px; 
+    width: 280px;
+    height: 100vh;
+    background-color: var(--verde-escuro); 
+    color: var(--letra-menu);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  
+  nav.menuHamburguer.aberto {
+    right: 0;
+  }
+
+
+  .btnFecharMenu {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--letra-menu);
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+
+  nav.menuHamburguer img.logoMenu {
+    width: 250;
+    height: 160;
+    angle: 0 deg;
+    opacity: 1;
+    top: 23px;
+    left: 50px;
+    
+  }
+
+  
+  nav.menuHamburguer a {
+    font-family: league Spartan;
     color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14.5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  nav.menuHamburguer a:hover {
+   color: var(--bloco-enviar);
+  }
+
+
+  .precisaDeAjuda {
+    display: flex;
+    margin-top: auto; 
+    justify-content: center;
     padding: 10px 0;
+  }
+  
+  .precisaDeAjuda button {
+   padding: 10px;
+    width: 177;
+    height: 72;
+     angle: 0 deg;
+    border-radius: 10px;
+    background-color:var(--precisa-bloco); 
+    border: none;
+    color: var(--precisa-letra);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .precisaDeAjuda button:hover {
+    background-color: #3e653b;
+  }
+
+ 
+
+  dialog::backdrop {
+    background: rgba(31, 58, 35, 0.9);
+  }
+
+  dialog {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #21332b;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 8px;
+
+  }
+
+  
+  .modal-content .fechar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--bloco-enviar);
+  }
+
+
+  #modalConfirmacao .modal-content {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #modalConfirmacao .modal-content h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  #modalConfirmacao .modal-content p {
+    color: var(--letra-marrom);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    line:var(--verde-escuro)
+    border: none;
+    background-color: #e2ffc4;
+    color: #13331e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+
+  /* Botão enviar do formulário */
+  form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #cde39f;
+    color: #13331e;
+    font-size: 18px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button[type="submit"]:hover {
+    background-color: #a1bf6f;
+  }
+
+body {
+    margin: 0;
+    font-family: , sans-serif;
+  }
+  
+  .btnHamburguer {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  .btnHamburguer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  
+  nav.menuHamburguer {
+    position: fixed;
+    top: 0;
+    right: -280px; 
+    width: 280px;
+    height: 100vh;
+    background-color: var(--verde-escuro); 
+    color: var(--letra-menu);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  
+  nav.menuHamburguer.aberto {
+    right: 0;
+  }
+
+
+  .btnFecharMenu {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: var(--letra-menu);
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+
+  nav.menuHamburguer img.logoMenu {
+    width: 250;
+    height: 160;
+    angle: 0 deg;
+    opacity: 1;
+    top: 23px;
+    left: 50px;
+    
+  }
+
+  
+  nav.menuHamburguer a {
+    font-family: league Spartan;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14.5px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  nav.menuHamburguer a:hover {
+   color: var(--bloco-enviar);
+  }
+
+
+  .precisaDeAjuda {
+    display: flex;
+    margin-top: auto; 
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .precisaDeAjuda button {
+   padding: 10px;
+    width: 177;
+    height: 72;
+     angle: 0 deg;
+    border-radius: 10px;
+    background-color:var(--precisa-bloco); 
+    border: none;
+    color: var(--precisa-letra);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .precisaDeAjuda button:hover {
+    background-color: #3e653b;
+  }
+
+ 
+
+  dialog::backdrop {
+    background: rgba(31, 58, 35, 0.9);
+  }
+
+  dialog {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #21332b;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    border-radius: 8px;
+
+  }
+
+  
+  .modal-content .fechar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--bloco-enviar);
+  }
+
+
+  #modalConfirmacao .modal-content {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #modalConfirmacao .modal-content h1 {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  #modalConfirmacao .modal-content p {
+    color: var(--letra-marrom);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    line:var(--verde-escuro)
+    border: none;
+    background-color: #e2ffc4;
+    color: #13331e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+
+  /* Botão enviar do formulário */
+  form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #cde39f;
+    color: #13331e;
+    font-size: 18px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button[type="submit"]:hover {
+    background-color: #a1bf6f;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #283d28;
+  padding: 10px 20px;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.logo {
+  height: 50px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.hero {
-    background-image: url('caminho/para/imagem-de-fundo.jpg'); /* Substitua com o caminho da imagem */
-    background-size: cover;
-    background-position: center;
-    padding: 50px 20px;
-    text-align: center;
-    color: #d5e8d4;
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.hero h2 {
-    font-size: 32px;
+.container {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
 }
 
-.hero p {
-    font-size: 16px;
-    margin-top: 20px;
+.container h1 {
+  color: #215323;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+.container p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
 }
